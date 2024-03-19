@@ -1,0 +1,28 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .image {
+    filter: brightness(70%);
+  }
+  
+  .image-container:hover .overlay-text {
+    opacity: 1;
+  }
+  
